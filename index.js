@@ -20,6 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
         formData.append("email", email);
         formData.append("name", name);
 
+        // Debug: Log the FormData content
+        console.log("Form Data:", email, name);
+
         // Send data to Google Apps Script
         fetch(scriptURL, {
             method: "POST",
